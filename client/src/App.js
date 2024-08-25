@@ -16,7 +16,7 @@ const App = () => {
   const handleSubmit = async () => {
     try {
       const parsedInput = JSON.parse(jsonInput);
-      const response = await axios.post('http://127.0.0.1:5000/bfhl', parsedInput);
+      const response = await axios.post('https://bajaj-task-teal.vercel.app/', parsedInput);
       setResponseData(response.data);
     } catch (error) {
       alert('Invalid JSON or server error');
