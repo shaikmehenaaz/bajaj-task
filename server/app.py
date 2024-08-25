@@ -8,7 +8,7 @@ CORS(app)  # Enable CORS for all routes
 def home():
     return "Welcome to the API!"
 
-@app.route('bajaj-task-rosy.vercel.app', methods=['POST'])
+@app.route('https://bajaj-task-rosy.vercel.app', methods=['POST'])
 def bfhl_post():
     try:
         # Extract data from the JSON request
